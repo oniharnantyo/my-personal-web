@@ -1,0 +1,66 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./ui/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      color: {
+        neutral: {
+          50: "#f4f5f7",
+          100: "#eaebf0",
+          200: "#caccd9",
+          300: "#aaaec2",
+          400: "#6b7195",
+          500: "#2B3467",
+          600: "#272f5d",
+          700: "#20274d",
+          800: "#1a1f3e",
+          900: "#151932",
+        },
+        accent: {
+          50: "#fcfdfe",
+          100: "#f8fbfd",
+          200: "#eef5fa",
+          300: "#e3eff6",
+          400: "#cfe3f0",
+          500: "#BAD7E9",
+          600: "#a7c2d2",
+          700: "#8ca1af",
+          800: "#70818c",
+          900: "#5b6972",
+        },
+        secondary: {
+          50: "#fefff7",
+          100: "#fdffef",
+          200: "#faffd8",
+          300: "#f7ffc0",
+          400: "#f1ff90",
+          500: "#EBFF61",
+          600: "#d4e657",
+          700: "#b0bf49",
+          800: "#8d993a",
+          900: "#737d30",
+        },
+        primary: {
+          50: "#fef6f7",
+          100: "#fdecef",
+          200: "#fad1d7",
+          300: "#f7b5bf",
+          400: "#f17d8f",
+          500: "#EB455F",
+          600: "#d43e56",
+          700: "#b03447",
+          800: "#8d2939",
+          900: "#73222f",
+        },
+      },
+    },
+  },
+  corePlugins: {
+    preflight: false,
+  },
+  plugins: [require("prettier-plugin-tailwindcss")],
+};
